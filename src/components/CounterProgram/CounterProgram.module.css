@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 85%;
+    margin: auto;
+}
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.container{
+    background-color: rgb(233, 226, 226);
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.displayCount{
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+.buttons{
+    padding: 10px 13px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: .5s;
+
+}
+
+.buttons:hover{
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+.zero{
+    color: black;
+
+}
+.negative{
+    color: red;
+}
+.positive{
+    color: green;
+}
