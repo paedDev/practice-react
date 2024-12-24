@@ -62,7 +62,11 @@ body{
     color: white;
 }
 .negative{
-    color: red;
+    color:  hsl(0, 100%, 60%);
+}
+#decrement:hover{
+    background-color: hsl(0, 100%, 60%);
+    color: white;
 }
 .positive{
     color:rgb(92, 201, 92);
