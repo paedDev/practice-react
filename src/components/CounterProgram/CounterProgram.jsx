@@ -10,6 +10,7 @@ function CounterProgram () {
     const increment = () => {
         setCount(count + 1)
         setTitle("Incrementing")
+
     }
     const reset = () => {
         setCount(0)
@@ -28,14 +29,16 @@ function CounterProgram () {
             
             <div className={styles.container}>
                 <h1 className={styles.title}>{title}</h1>
-                <h2 className={`${styles.displayCount} ${count === 0 ? styles.zero : '' } ${count > 0 ? styles.positive : styles.negative}`}>{count}</h2>
-                <button onClick={increment} className={styles.buttons} >
+                <h2 className={`${styles.displayCount}
+                   ${count === 0 ? styles.zero : count > 0 ? styles.positive : styles.negative}`}>{count}</h2>
+
+                <button onClick={increment} className={styles.buttons} id={styles.increment}>
                     Increment
                 </button>
-                <button onClick={reset} className={styles.buttons}>
+                <button onClick={reset} className={styles.buttons} id={styles.reset}>
                     Reset
                 </button>
-                <button onClick={decrement} className={styles.buttons}>
+                <button onClick={decrement} className={styles.buttons} id={styles.decrement}>
                     Decrement
                 </button>
             </div>
